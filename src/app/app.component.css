@@ -1,0 +1,20 @@
+body{
+  position: relative;
+  background-color: #434242;
+}
+main{
+  margin: auto;
+  width: 95vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  min-height: 700px;
+}
+section{
+  position: relative;
+  width: 95vw;
+  height: 20rem;
+}
+.teste{
+  height: 20rem;
+}

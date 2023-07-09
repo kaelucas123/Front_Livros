@@ -1,0 +1,43 @@
+<body>
+  <div class="container-fluid">
+<!--    ================= tab header ====================-->
+    <div class="row tab_header">
+
+      <div class="col-4 tab_header_text" >
+        <p class="mt-3">Nome</p>
+      </div>
+
+      <div class="col tab_header_text d-flex justify-content-center">
+        <p class="mt-3">Marca</p>
+      </div>
+
+      <div class="col tab_header_text d-flex justify-content-center">
+        <p class="mt-3">Ano</p>
+      </div>
+
+      <div class="col">
+        <button  *ngIf="hasLivrosSelecionados()" (click)="deletar()"></button>
+      </div>
+    </div>
+<!--    ================== tab content===================-->
+    <div class="row tab_content" *ngFor="let livro of livros" >
+      <div class="col-4 mt-1" >
+        <p class="mt-3">{{livro.nome}}</p>
+      </div>
+
+      <div class="col d-flex justify-content-center mt-1">
+        <p class="mt-3">{{livro.autor}}</p>
+      </div>
+
+      <div class="col d-flex justify-content-center mt-1">
+        <p class="mt-3">{{livro.data_publicacao}}</p>
+      </div>
+
+      <div class="col d-flex justify-content-center mt-1">
+        <input type="checkbox" (change)="selecionarLivros(livro.id)">
+      </div>
+    </div>
+  </div>
+
+
+</body>

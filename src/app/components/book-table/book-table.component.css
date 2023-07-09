@@ -1,0 +1,33 @@
+:root{
+  --tab_header_border_color: #848383;
+}
+
+body{
+  background-color: transparent;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin: 2rem 0;
+  width: 70rem;
+  height: auto;
+}
+
+.tab_header{
+  background-color: #222222;
+  border: 2px solid #22A39F;
+  color: #FFFF;
+  border-radius: 10px 10px 0 0;
+}
+.tab_header_text{
+  border-right: 2px #848383 solid;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+.tab_content{
+  color: #222222;
+}
+
+.tab_content div{
+  background-color: #656464;
+
+}
